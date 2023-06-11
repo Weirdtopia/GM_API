@@ -1,5 +1,6 @@
 public class app {
     public static void main(String[] args) {
-        connection c = new connection("GM_Expense_Revenue", "postgres", "apple123");
+        System.out.println();
+        connection c = new connection(System.getProperty("db.databasename"), System.getProperty("db.username"), System.getProperty("db.password"));
     }
 }
